@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-work-sans: "Work Sans", sans-serif;
+  --ff-jost: "Jost", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+time,
+data,
+input,
+button,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  font-family: var(--ff-work-sans);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
