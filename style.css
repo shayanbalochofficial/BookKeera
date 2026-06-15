@@ -54,7 +54,6 @@ button {
   color: inherit;
 }
 
-.navbar,
 .overlay,
 .header-top :is(.input-wrapper, .header-action-btn:last-child),
 .header-contact-link {
@@ -106,4 +105,40 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.header-action-btn,
+.nav-open-btn {
+  font-size: 24px;
+  transition: 0.25s ease;
+}
+
+.header-action :is(.header-action-btn, .nav-open-btn):is(:hover, :focus) {
+  color: rgb(102, 197, 204);
+}
+
+.header-action-btn {
+  position: relative;
+}
+
+.header-action-btn .span {
+  position: absolute;
+  top: -15px;
+  right: -8px;
+  background-color: rgb(32, 35, 39);
+  font-size: 1rem;
+  min-width: 18px;
+  min-height: 18px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.header-bottom {
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-width: 260px;
+  width: 100%;
+  height: 100vh;
 }
